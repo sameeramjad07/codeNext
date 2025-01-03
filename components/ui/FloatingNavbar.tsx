@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "@/lib/utils";
+import { useScrollPosition } from "../../hooks/useScrollPosition";
 
 export const FloatingNav = ({
   navItems,
@@ -15,11 +16,13 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const [active, setActive] = useState<string | null>(null);
+  const { isVisible } = useScrollPosition();
 
   return (
     <div
       className={cn(
-        "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50",
+        "fixed top-10 inset-x-0 max-w-xl mx-auto z-50 transition-all duration-300",
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10",
         className
       )}
     >
@@ -30,54 +33,35 @@ export const FloatingNav = ({
             setActive={setActive}
             active={active}
             item={navItem.name}
+            link={navItem.link}
           >
             {/* Add content for each nav item */}
             {navItem.name === "Services" && (
-              <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                <HoveredLink href="/interface-design">
-                  Interface Design
-                </HoveredLink>
-                <HoveredLink href="/seo">
-                  Search Engine Optimization
-                </HoveredLink>
-                <HoveredLink href="/branding">Branding</HoveredLink>
-              </div>
-            )}
-            {navItem.name === "Products" && (
               <div className="grid grid-cols-2 gap-10 p-4 text-sm">
                 <ProductItem
-                  title="Algochurn"
-                  href="https://algochurn.com"
-                  src="https://assets.aceternity.com/demos/algochurn.webp"
-                  description="Prepare for tech interviews like never before."
+                  title="Custom Web Development"
+                  href="/services/custom-web-development"
+                  src="/images/custom-web-development.jpg"
+                  description="Tailored web solutions to meet your unique business needs."
                 />
                 <ProductItem
-                  title="Tailwind Master Kit"
-                  href="https://tailwindmasterkit.com"
-                  src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                  description="Production ready Tailwind CSS components."
+                  title="Mobile Application"
+                  href="/services/mobile-application"
+                  src="/images/mobile-app-development.jpg"
+                  description="Innovative mobile apps for iOS and Android platforms."
                 />
                 <ProductItem
-                  title="Moonbeam"
-                  href="https://gomoonbeam.com"
-                  src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                  description="Go from idea to blog in minutes."
+                  title="Full Stack Development"
+                  href="/services/full-stack-development"
+                  src="/images/full-stack-development.jpg"
+                  description="End-to-end development services for robust applications."
                 />
                 <ProductItem
-                  title="Rogue"
-                  href="https://userogue.com"
-                  src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                  description="Respond to RFPs 10x faster using AI."
+                  title="HR Augmentation"
+                  href="/services/hr-augmentation"
+                  src="/images/hr-augmentation.jpg"
+                  description="Enhance your team with skilled professionals on demand."
                 />
-              </div>
-            )}
-            {navItem.name === "Pricing" && (
-              <div className="flex flex-col space-y-4 text-sm">
-                <HoveredLink href="/hobby">Hobby</HoveredLink>
-                <HoveredLink href="/individual">Individual</HoveredLink>
-                <HoveredLink href="/team">Team</HoveredLink>
-                <HoveredLink href="/enterprise">Enterprise</HoveredLink>
               </div>
             )}
           </MenuItem>

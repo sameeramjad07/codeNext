@@ -1,9 +1,7 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Services", link: "#services" },
-  { name: "Products", link: "#products" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "#Footer" },
+  { name: "Services", link: "/services" },
+  { name: "Contact Us", link: "/contact-us" },
 ];
 
 export const gridItems = [
@@ -70,7 +68,7 @@ export const gridItems = [
   },
 ];
 
-export const projects = [
+export const services = [
   {
     id: 1,
     title: "3D Solar System Planets to Explore",
