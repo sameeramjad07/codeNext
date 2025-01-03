@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-import dynamic from "next/dynamic";
 
 // Also install this npm i --save-dev @types/react-lottie
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 

@@ -45,7 +45,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Your partner in Full-Stack Web Development, Cross-Platform App Development, and HR Excellence.
+            Your partner in Full-Stack Web Development, Cross-Platform App Development, and HR Augmentation.
           </p>
 
           <a href="#services">
