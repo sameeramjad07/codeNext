@@ -60,7 +60,7 @@ const BentoGridItem = ({
     setAnimationPlayed(true);
     setTimeout(() => {
       setAnimationPlayed(false);
-      window.location.href = "mailto:info@codenextsolutions.com";
+      window.location.href = "/contact-us";
     }, 2000);
   };
 

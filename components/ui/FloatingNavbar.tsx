@@ -21,7 +21,7 @@ export const FloatingNav = ({
   return (
     <div
       className={cn(
-        "fixed top-10 inset-x-0 max-w-xl mx-auto z-50 transition-all duration-300",
+        "fixed top-10 inset-x-0 max-w-lg mx-auto z-50 transition-all duration-300",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10",
         className
       )}

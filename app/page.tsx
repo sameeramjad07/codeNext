@@ -8,7 +8,7 @@ import { LowerBentoGrid } from "@/components/LowerBentoGrid";
 import { UpperBentoGrid } from "@/components/UpperBentoGrid";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
-import { ServicesSection } from "@/components/FeatureSection";
+import { FeaturesSection } from "@/components/FeatureSection";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         <Hero />
         <UpperBentoGrid />
-        <ServicesSection />
+        <FeaturesSection />
         <LowerBentoGrid />
         <Clients />
         <Footer />

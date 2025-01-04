@@ -1,61 +1,59 @@
 import { cn } from "@/lib/utils";
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
+  IconUsers,
+  IconHeadset,
+  IconCpu,
+  IconEye,
+  IconTarget,
+  IconSettings,
 } from "@tabler/icons-react";
 
-export function ServicesSection() {
+export function FeaturesSection() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Expert Team",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+        "Our team consists of industry professionals with years of experience to guide your project to success.",
+      icon: <IconUsers /> // Replace with an appropriate icon.
     },
     {
-      title: "Ease of use",
+      title: "Dedicated Support",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "Your project is our priority. Enjoy round-the-clock assistance from our dedicated team.",
+      icon: <IconHeadset /> // Replace with an appropriate icon.
     },
     {
-      title: "Pricing like no other",
+      title: "Customized Solutions",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "We don’t believe in one-size-fits-all. Get solutions tailored to your business needs.",
+      icon: <IconSettings /> // Replace with an appropriate icon.
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      title: "Cutting-Edge Technology",
+      description:
+        "Stay ahead of the curve with the latest tools and technologies implemented seamlessly.",
+      icon: <IconCpu /> // Replace with an appropriate icon.
     },
     {
-      title: "24/7 Customer Support",
+      title: "Transparent Processes",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+        "We keep you in the loop at every step with clear communication and real-time progress updates.",
+      icon: <IconEye /> // Replace with an appropriate icon.
     },
     {
-      title: "Money back guarantee",
+      title: "Result-Driven Approach",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+        "Our primary goal? Delivering measurable outcomes that exceed expectations.",
+      icon: <IconTarget /> // Replace with an appropriate icon.
     },
   ];
   return (
     <section id="services" className="py-20">
       <h1 className="heading">
-        A number of
-        <span className="text-purple"> services </span>
-        we offer
+        Why Choose
+        <span className="text-purple"> Our Agency </span>?
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  relative z-10 py-10 max-w-7xl mx-auto">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  relative z-10 py-10 max-w-7xl mx-auto">
         {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}

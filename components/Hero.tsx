@@ -48,7 +48,7 @@ const Hero = () => {
             Your partner in Full-Stack Web Development, Cross-Platform App Development, and HR Augmentation.
           </p>
 
-          <a href="#services">
+          <a href="/services">
             <MagicButton
               title="Explore Services"
               icon={<FaLocationArrow />}

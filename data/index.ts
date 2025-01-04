@@ -37,8 +37,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "dasdf asdgea geatea bayraed ayeac aera.",
-    description: "astaes teaf dateab etadd etc",
+    title: "Mobile application",
+    description: "We develop innovative, user-friendly mobile apps for iOS and Android",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -48,19 +48,18 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "asdfa etasklfd aetj asdfaet asdfjaetsadf",
-    description: "afefasdpa gsdaf atefa thjyrdty urtsgf",
+    title: "Custom Web Development",
+    description: "We build custom, scalable, and secure web apps tailored to your business needs, providing a seamless user experience",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
+    titleClassName: "justify-center md:justify-start",
     img: "/b5.svg",
     spareImg: "/grid.svg",
   },
   {
     id: 3,
-    title: "eatea bet cteax gec",
-    description: "fda dafdst eg eatea bet cteax gec",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    title: "Full-Stack Development",
+    description: "From front-end design to back-end integration, we offer complete full-stack development",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
@@ -69,6 +68,38 @@ export const gridItems = [
 ];
 
 export const services = [
+  {
+    title: "Custom Web Development",
+    description: "Tailored web solutions to meet your unique business needs.",
+    icon: "🌐",
+    link: "/services/custom-web-development",
+    image: "/images/custom-web-development.jpg", // Example image path
+  },
+  {
+    title: "Mobile Application Development",
+    description: "Innovative mobile apps for iOS and Android platforms.",
+    icon: "📱",
+    link: "/services/mobile-application",
+    image: "/images/mobile-app-development.jpg", // Example image path
+  },
+  {
+    title: "Full Stack Development",
+    description: "End-to-end development services for robust applications.",
+    icon: "☁️",
+    link: "/services/full-stack-development",
+    image: "/images/full-stack-development.jpg", // Example image path
+  },
+  {
+    title: "HR Augmentation",
+    description: "Enhance your team with skilled professionals on demand.",
+    icon: "🤖",
+    link:"/services/hr-augmentation",
+    image: "/images/hr-augmentation.jpg", // Example image path
+  },
+];
+
+
+export const services2 = [
   {
     id: 1,
     title: "3D Solar System Planets to Explore",
@@ -197,14 +228,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/facebook.svg",
+    link: "https://www.facebook.com/profile.php?id=61569716352364"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/instagram.svg",
+    link: ""
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/company/code-next-solutions/"
   },
 ];

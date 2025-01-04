@@ -9,24 +9,27 @@ export const LowerBentoGrid = ({
   const lowerGridItems = gridItems.filter(item => [3, 4, 5].includes(item.id));
 
   return (
-    <div
-      className={cn(
-        "grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8",
-        className
-      )}
-    >
-      {/* {lowerGridItems.map((item) => (
-        <BentoGridItem
-          key={item.id}
-          {...item}
-        />
-      ))} */}
-      <div className="grid grid-cols-1 gap-4 lg:gap-8 h-full">
-        <BentoGridItem {...lowerGridItems.find(item => item.id === 3)!} />
-        <BentoGridItem {...lowerGridItems.find(item => item.id === 4)!} />
+    <section className="py-20">
+      <h1 className="heading mb-16 -mt-20">
+        Web and 
+        <span className="text-purple"> Mobile </span>
+        application
+        <span className="text-purple"> development </span>
+        
+      </h1>
+      <div
+        className={cn(
+          "grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8",
+          className
+        )}
+      >
+        <div className="grid grid-cols-1 gap-4 lg:gap-8 h-full">
+          <BentoGridItem {...lowerGridItems.find(item => item.id === 3)!} />
+          <BentoGridItem {...lowerGridItems.find(item => item.id === 4)!} />
+        </div>
+        <BentoGridItem {...lowerGridItems.find(item => item.id === 5)!} className="h-full" />
       </div>
-      <BentoGridItem {...lowerGridItems.find(item => item.id === 5)!} className="h-full" />
-    </div>
+    </section>
   );
 };
 
@@ -53,6 +56,7 @@ const BentoGridItem = ({
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   return (
+    
     <div
       className={cn(
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
@@ -90,13 +94,13 @@ const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-            {description}
-          </div>
-          <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}>
+          
+          <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 mb-4`}>
             {title}
           </div>
-
+          <div className="font-sans font-extralight md:max-w-60 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+            {description}
+          </div>
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
