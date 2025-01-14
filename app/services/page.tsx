@@ -59,15 +59,14 @@ const ServicesPage = () => {
       </section>
 
       {/* Services Grid */}
-      <section ref={servicesRef} className="w-full max-w-7xl px-4 py-20">
+      <section ref={servicesRef} className="w-full max-w-7xl px-4 my-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
         </div>
       </section>
-
-        <Footer/>
+      <Footer/>
       {/* </div> */}
       
     </main>

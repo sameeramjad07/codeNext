@@ -1,5 +1,5 @@
 export const navItems = [
-  { name: "About", link: "#Footer" },
+  { name: "About", link: "#" },
   { name: "Services", link: "/services" },
   { name: "Contact Us", link: "/contact-us" },
 ];
@@ -94,12 +94,18 @@ export const services = [
     technologies: [
       "React", "Next.js", "Vue.js", "Node.js", "Express", "MongoDB", "PostgreSQL", "Tailwind CSS", "Docker", "AWS"
     ],
+    tags: ["Responsive Design", "SEO Optimized", "Custom Solutions"],
+    highlights: [
+      "Tailored websites for your unique business needs.",
+      "Optimized for speed and search engines.",
+      "Mobile-first, responsive designs."
+    ]
   },
   {
     title: "Mobile Application Development",
     description: "Innovative mobile apps for iOS and Android platforms.",
     icon: "📱",
-    link: "/services/mobile-application",
+    link: "/services/mobile-application-development",
     image: "/images/mobile-app-development.jpg", // Example image path
     features: [
       {
@@ -121,6 +127,12 @@ export const services = [
     technologies: [
       "React Native", "Flutter", "Swift", "Kotlin", "Firebase", "GraphQL", "Redux", "SQLite", "Realm"
     ],
+    tags: ["iOS & Android", "User-Centric", "High Performance"],
+    highlights: [
+      "Cross-platform apps for iOS and Android.",
+      "Intuitive designs for enhanced user experience.",
+      "Built with scalability and performance in mind."
+    ]
   },
   {
     title: "Full Stack Development",
@@ -148,6 +160,12 @@ export const services = [
     technologies: [
       "MERN Stack", "MEVN Stack", "Django", "Flask", "Ruby on Rails", "Spring Boot", "MySQL", "PostgreSQL", "Docker", "Kubernetes"
     ],
+    tags: ["Frontend & Backend", "Cloud Ready", "End-to-End"],
+    highlights: [
+      "Expertise in both frontend and backend technologies.",
+      "Secure, scalable, and cloud-integrated solutions.",
+      "Complete development lifecycle management."
+    ]
   },
   {
     title: "HR Augmentation",
@@ -175,6 +193,12 @@ export const services = [
     technologies: [
       "HR Management Tools", "Collaboration Platforms", "Slack", "Jira", "Trello", "Zoom"
     ],
+    tags: ["Flexible Hiring", "Skilled Talent", "Global Workforce"],
+    highlights: [
+      "Access to a diverse pool of top-tier professionals.",
+      "Flexible hiring models to suit your needs.",
+      "Seamless integration with your existing team."
+    ]
   },
 ];
 
