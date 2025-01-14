@@ -46,7 +46,7 @@ export const FloatingNav = ({
                 />
                 <ProductItem
                   title="Mobile Application"
-                  href="/services/mobile-application"
+                  href="/services/mobile-application-development"
                   src="/images/mobile-app-development.jpg"
                   description="Innovative mobile apps for iOS and Android platforms."
                 />

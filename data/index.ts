@@ -74,6 +74,26 @@ export const services = [
     icon: "🌐",
     link: "/services/custom-web-development",
     image: "/images/custom-web-development.jpg", // Example image path
+    features: [
+      {
+        title: "Responsive Design",
+        description:
+          "Crafting visually appealing designs that adapt seamlessly to all devices.",
+      },
+      {
+        title: "Scalable Architecture",
+        description:
+          "Building systems capable of handling growth and evolving requirements.",
+      },
+      {
+        title: "Secure Integrations",
+        description:
+          "Ensuring your web solutions are equipped with top-notch security protocols.",
+      },
+    ],
+    technologies: [
+      "React", "Next.js", "Vue.js", "Node.js", "Express", "MongoDB", "PostgreSQL", "Tailwind CSS", "Docker", "AWS"
+    ],
   },
   {
     title: "Mobile Application Development",
@@ -81,6 +101,26 @@ export const services = [
     icon: "📱",
     link: "/services/mobile-application",
     image: "/images/mobile-app-development.jpg", // Example image path
+    features: [
+      {
+        title: "Cross-Platform Support",
+        description:
+          "Delivering consistent performance across iOS and Android devices.",
+      },
+      {
+        title: "User-Centered Design",
+        description:
+          "Focusing on intuitive and engaging user experiences.",
+      },
+      {
+        title: "Offline Functionality",
+        description:
+          "Enabling uninterrupted access even without an internet connection.",
+      },
+    ],
+    technologies: [
+      "React Native", "Flutter", "Swift", "Kotlin", "Firebase", "GraphQL", "Redux", "SQLite", "Realm"
+    ],
   },
   {
     title: "Full Stack Development",
@@ -88,13 +128,53 @@ export const services = [
     icon: "☁️",
     link: "/services/full-stack-development",
     image: "/images/full-stack-development.jpg", // Example image path
+    features: [
+      {
+        title: "API Development",
+        description:
+          "Building robust and secure APIs for seamless integration.",
+      },
+      {
+        title: "DevOps Integration",
+        description:
+          "Streamlining development and deployment with CI/CD practices.",
+      },
+      {
+        title: "Performance Optimization",
+        description:
+          "Enhancing application speed and responsiveness.",
+      },
+    ],
+    technologies: [
+      "MERN Stack", "MEVN Stack", "Django", "Flask", "Ruby on Rails", "Spring Boot", "MySQL", "PostgreSQL", "Docker", "Kubernetes"
+    ],
   },
   {
     title: "HR Augmentation",
     description: "Enhance your team with skilled professionals on demand.",
     icon: "🤖",
-    link:"/services/hr-augmentation",
+    link: "/services/hr-augmentation",
     image: "/images/hr-augmentation.jpg", // Example image path
+    features: [
+      {
+        title: "On-Demand Talent",
+        description:
+          "Access to a global pool of highly skilled professionals.",
+      },
+      {
+        title: "Seamless Integration",
+        description:
+          "Effortless onboarding and collaboration with your existing team.",
+      },
+      {
+        title: "Scalable Staffing",
+        description:
+          "Flexible resourcing to match your evolving business needs.",
+      },
+    ],
+    technologies: [
+      "HR Management Tools", "Collaboration Platforms", "Slack", "Jira", "Trello", "Zoom"
+    ],
   },
 ];
 

@@ -1,28 +1,9 @@
 "use client";
 
 import React from "react";
-import { Laptop, Smartphone, Users } from 'lucide-react';
-
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
-const services = [
-  {
-    id: 1,
-    name: 'Full Stack Web',
-    icon: Laptop,
-  },
-  {
-    id: 2,
-    name: 'Mobile Application',
-    icon: Smartphone,
-  },
-  {
-    id: 3,
-    name: 'HR Augmentation',
-    icon: Users,
-  },
-];
 
 const Clients = () => {
   return (
@@ -43,19 +24,6 @@ const Clients = () => {
             speed="slow"
           />
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
-          {services.map((service) => (
-            <React.Fragment key={service.id}>
-              <div className="flex justify-center md:max-w-60 max-w-32 gap-2">
-                <service.icon
-                  className="md:w-10 w-5"
-                />
-                <h3 className="text-lg font-semibold mb-2 dark:text-white">{service.name}</h3>
-              </div>
-            </React.Fragment>
-          ))}
-        </div>
-
         {/* <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
           {companies.map((company) => (
             <React.Fragment key={company.id}>
